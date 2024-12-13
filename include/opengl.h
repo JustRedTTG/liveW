@@ -12,7 +12,7 @@
 // This includes the new stuff, supplied by the application
 #include "GL/glext.h"
 
-int win_width, win_height;
+extern int win_width, win_height;
 
 void initGL();
 void swapBuffers();

@@ -3,6 +3,13 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+GLuint vertArray, posBuf;
+
+FT_Library ft;
+FT_Face face;
+character *characters[65536];
+GLuint VAO, VBO;
+
 renderer *init_rend()
 {
     renderer *r = (renderer *)malloc(sizeof(struct renderer));

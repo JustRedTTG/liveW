@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-struct config {
+extern struct config {
     int debug;
     char *src;
     bool plasma;

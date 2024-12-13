@@ -1,5 +1,7 @@
 #include "config.h"
 
+struct config cfg;
+
 void printHelp()
 {
     printf("Usage: liveW <options>                                                      \n");

@@ -23,10 +23,10 @@ typedef struct renderer {
 	SongInfo songInfo;
 } renderer;
 
-GLuint vertArray, posBuf;
+extern GLuint vertArray, posBuf;
 
-FT_Library ft;
-FT_Face face;
+extern FT_Library ft;
+extern FT_Face face;
 
 typedef struct character {
     GLuint	textureID;
@@ -35,9 +35,9 @@ typedef struct character {
     GLuint	advance;
 } character;
 
-character *characters[65536];
+extern character *characters[65536];
 
-GLuint VAO, VBO;
+extern GLuint VAO, VBO;
 
 renderer *init_rend();
 void linkBuffers(renderer *r);
